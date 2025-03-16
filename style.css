@@ -1,0 +1,881 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.hero{
+    min-height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff url('https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,width=1650,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png') no-repeat top scroll;
+}
+#logo {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h2 {
+    font-size: 2.8rem;
+    color: #fff;
+}
+.hero #nav-components {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo svg, .none svg {
+    fill: #fff;
+}
+
+#logo p, #logo h2 {
+    padding: 0 0.5rem;
+}
+.nav-btn {
+    padding: 1rem 2rem;
+}
+.empty {
+    width: 15%;
+}
+.main-components {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+.main-components .flex-item {
+    align-self: center;
+}
+.main-components h1 {
+    color: #fff;
+    font-size: 3.6rem;
+}
+.nav-btn a{
+    padding: 1rem 1.2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 1rem;
+}
+#signup {
+    background-color: #fff;
+    color: #606060;
+}
+#signin {
+    background-color: #EB1700;
+    color: #fff;
+}
+.hide {
+    display: none;
+}
+.nav-change {
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+.search {
+    background-color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+.search #location {
+    padding: 0 2rem 0 0;
+}
+.address-btn button  {
+    margin: 2rem 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    border: none;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.mobile-display{
+    display: none;
+}
+.mid-section {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid-section .flex-item {
+    margin: 0 2rem;
+    width: 20%;
+    text-align: center;
+}
+.mid-section h2{
+    font-size: 2.6rem;
+}
+.mid-section h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.mid-section .flex-item span {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #EB1700;
+}
+.mid-text span.center{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    justify-content: center;
+    font-weight: bold;
+}
+.mid-text span.center i {
+    overflow: hidden;
+    padding-left: 0.5rem;
+}
+
+.crave-section, .delivery-section {
+    display: flex;
+    justify-content: center;
+}
+.crave-text,
+.delivery-text {
+    padding: 2rem 0;
+}
+.crave-text-contents, .delivery-text-contents {
+    align-self: center;
+    margin-right: 3rem;
+    width: 25%;
+    font-size: 1.4rem;
+}
+.crave-text-contents .sub-text {
+    display: block;
+    line-height: 2;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.crave-text-contents a, .delivery-text a, .groceries-section #shop, .grid-container .flex-box a {
+    background-color: #EB1700;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 #19191900;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.crave-section .crave-image img, .delivery-section .delivery-image img{
+    height: 500px;
+    width: 100%;
+}
+
+.crave-text-contents h2, .delivery-text-contents h2 {
+    font-size: 3rem;
+}
+.delivery-section {
+    min-height: 70vh;
+    background-color: rgb(254, 241, 238);
+}
+.delivery-text-contents {
+    margin: 0 0 0 3rem ;
+}
+.delivery-text-contents h2 {
+    margin: 1rem 0;
+}
+.delivery-text-contents .description-text {
+    font-weight: 500;
+}
+.delivery-image {
+    align-self: center;
+}
+.groceries-section {
+    display: flex;
+    flex-direction: column;
+    background: url('https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png') scroll top center no-repeat;
+    background-size: cover;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.groceries-section .overlay {
+    height: 70vh;
+    width: 100%;
+    background-color: #0000003d;
+}
+.groceries-text{
+    padding: 2rem 0;
+    position: absolute;
+    width: 35rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.groceries-text .small-text {
+    font-weight: 500;
+    display: block;
+    margin: 1rem 0;
+}
+.groceries-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.convenience-section {
+    min-height: 70vh;
+}
+.convenience-text {
+    width: 80%;
+}
+.convenience-text h2 {
+    min-width: 50%;
+}
+.convenience-image {
+    align-self: center;
+}
+.grid-container {
+    padding: 4rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(254, 241, 238);
+    justify-content: center;
+}
+.flex-box {
+    display: flex;
+}
+.grid-container .flex-box {
+    justify-content: center;
+    padding: 2rem;
+}
+.grid-container h2, .opportunity-section h2, .location-container h2 {
+    padding: 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+}
+.grid-container .description-text {
+    font-size: 1.5rem;
+}
+.grid-container .grid-content {
+    padding: 2rem;
+}
+.grid-container a {
+    font-size: 1.4rem;
+}
+.center {
+    text-align: center;
+}
+.grow-section {
+    align-items: center;
+    min-height: 70vh;
+    background-color: #fef1ee;
+    display: flex;
+}
+.grow-image img {
+    height: 400px;
+}
+.location-container {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location-container table {
+    width: 50%;
+    text-align: center;
+}
+table td {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+table td:hover {
+    background-color: rgb(254, 241, 238);
+}
+.location-container .thead {
+    font-size: 1.4rem;
+}
+.location-container .thead .actual {
+    border-bottom: 0.2rem solid #6e6e6e;
+}
+#none {
+    display: none !important;
+}
+footer h2 {
+    margin: auto;
+    width: 60%;
+    align-self: self-start;
+    color: #fff;
+    padding: 2rem 0;
+}
+footer {
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .link-section .links {
+    width: 15%;
+}
+footer .link-section span {
+    display: block;
+}
+footer .link-section a {
+    line-height: 2;
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 1.2rem;
+}
+footer .link-section a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+footer .link-section {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.link-section .apps {
+    display: flex;
+}
+.apps .app-item {
+    width: 50%;
+}
+.footnote {
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footnote span {
+    display: block;
+}
+.footnote .terms {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 65%;
+}
+.app-items {
+    flex-direction: column;
+}
+
+footer h4 {
+    padding: 3rem 0 1.5rem 0;
+    color: #fff;
+}
+footer .app-items span{
+    display: flex;
+    height: 5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background: #494949;
+}
+.footnote a {
+    color: #fff;
+    text-decoration: none;
+}
+.footnote button {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width:1400px) {
+    .nav-btn{
+        width: 30%;
+    }
+    .empty {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .empty {
+        width: 20%;
+    }
+    .nav-btn a{
+        font-size: 1rem;
+    }
+    .hero {
+        background-position: center;
+        background-size:cover;
+    }
+    .search {
+        background-color: #fff;
+        width: 23.75rem;
+        margin: 1rem 0;
+    }
+    .address-btn button  {
+        margin: 2rem 0;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        border: none;
+    }
+    .mid-section-content {
+        padding: 1rem;
+    }
+    .mid-section {
+        flex-direction: column;
+        height: auto;
+        padding: 5rem 0;
+    }
+    .mid-section .middle,
+    .mid-section .left,
+    .mid-section .right {
+        display: flex;
+        width: auto;
+    }
+    .mid-img img {
+        height: 150px;
+        width: 150px;
+        padding-right: 5rem;
+    }
+    .mid-text .center {
+        text-align: left;
+    }
+    .mid-text {
+        padding-left: 2rem;
+    }
+    .mid-text span.center{
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        font-weight: bold;
+    }
+    .mid-text span.center i {
+        overflow: hidden;
+        padding-left: 0.5rem;
+    }
+    .crave-text, .delivery-text {
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .crave-text a, .delivery-text a, .groceries-text #shop {
+        display: inline-block;
+        width: 14rem !important;
+    }
+    .crave-text-contents, .delivery-text-contents {
+        width: 45%;
+        font-size: 1.4rem;
+    }
+    .delivery-section, .convenience-section {
+        overflow: hidden;
+    }
+    .groceries-text, .convenience-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .groceries-text #shop {
+        align-self: center;
+    }
+    .convenience-text #shop-now {
+        width: 10rem !important;
+    }
+    .convenience-text h2 {
+        font-size: 3.5rem !important;
+        width: 100%;
+    }
+    .grid-container .grid-content img {
+        width: 350px;
+    }
+    .grid-container .grid-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-content a {
+        align-self: center;
+    }
+    .grid-content #pickup {
+        width: 15rem !important;
+    }
+    .opportunity-text h2 {
+        width: 100%;
+        text-align: left !important;
+    }
+    .location-container table {
+        width: 100%;
+        text-align: center;
+    }
+    table td {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    footer .link-section, .footnote {
+        width: 100%;
+    }
+    footer h2 {
+        width: 90%;
+        align-self: self-start;
+        color: #fff;
+        padding: 2rem 0;
+    }
+    footer .links {
+        width: 12%;
+    }
+    .apps .app-item {
+        display: none;
+    }
+    .app-items span {
+        overflow: hidden;
+    }
+    .app-items svg {
+        width: 120px;
+    }
+}
+@media screen and (max-width:768px) {
+    .empty {
+        width: none;
+    }
+    #logo {
+        width: 40%;
+    }
+    .nav-btn a {
+        margin: 0 0.2rem;
+    }
+    .hero .main-components {
+        height: 60vh;
+        justify-content: flex-end;
+    }
+    .hero {
+        height: 100vh;
+        background-position: center;
+        background-size:cover;
+    }
+    .search {
+        background-color: #fff;
+        width: 23.75rem;
+        padding: 2rem 1rem;
+        border-radius: 5rem;
+        margin: 1rem 0;
+    }
+    .hide-much {
+        display: none;
+    }
+    .crave-text, .delivery-text {
+        padding-left: 2rem;
+    }
+    .crave-image, .delivery-image {
+        width: 50%;
+    }
+    .crave-image img, .delivery-image img {
+        height: 400px !important;
+    }
+    .grid-container .grid-content img {
+        width: 300px;
+    }
+    .grid-container h2 {
+        font-size: 2.8rem;
+    }
+
+    .opportunity-text-content{
+        width: 60%;
+        text-align: left !important;
+    }
+    .grow-image {
+        width: 40%;
+    }
+    .grow-image img {
+        height: 600px;
+        object-fit: cover;
+        object-position: -260px 10px;
+    }
+    .opportunity-image img{
+        object-fit: cover;
+    }
+    .location-container table {
+        width: 100%;
+        text-align: center;
+    }
+    table td {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    footer .link-section, .footnote {
+        width: 100%;
+    }
+    footer h2 {
+        width: 90%;
+        align-self: self-start;
+        color: #fff;
+        padding: 2rem 0;
+    }
+    footer .links {
+        width: 12%;
+    }
+    .apps .app-item, .app-items {
+        display: none;
+    }
+    .app-items span {
+        overflow: hidden;
+    }
+    .none {
+        display: flex;
+    }
+    .app-items svg {
+        width: 120px;
+    }
+}
+@media screen and (max-width:600px) {
+    #logo{
+        display: none;
+    }
+    .nav-btn {
+        width: 40%;
+    }
+    #none {
+        min-width: 38%;
+        align-self: center;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex !important;
+    }
+    #none svg {
+        fill: #fff;
+    }
+    .mobile-display{
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-display .action {
+        display: inline-block;
+        background-color: #EB1700;
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 6rem;
+        border-radius: 3rem;
+        margin: 1rem 0;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 #19191900;
+        transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;    
+    }
+    .mobile-display .flex-box {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .mobile-display .image {
+        background-color: #fff;
+        padding: 1rem;
+        margin-right: 0.5rem;
+    }
+    .mobile-display .image svg{
+        fill: #EB1700;
+    }
+    .rating {
+        color: #606060;
+    }
+    .crave-section, .delivery-section {
+        height: auto;
+        flex-direction: column;
+    }
+    .crave-text-contents, .delivery-text-contents {
+        width: 100%;
+        order: 1;
+        padding: 2rem 0;
+    }
+    .crave-text h2 br {
+        display: none;
+    }
+    .crave-section .crave-image, .delivery-image, .grow-image {
+        width: 100%;
+    }
+    .crave-image img, .delivery-image img{
+        height: 300px !important;
+        object-fit: cover;
+        object-position: 10% 80%;
+    }
+    .crave-text br, .delivery-text br {
+        display: none;
+    }
+    .crave-text a, .delivery-text a {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    .groceries-section {
+        margin-bottom: 2rem;
+    }
+    .groceries-text {
+        width: 90%;
+    }
+    #convenience {
+        width: 90%;
+        margin: auto;
+    }
+    .convenience-text {
+        width: 100%;
+    }
+    .convenience-text h2 {
+        font-size: 2.4rem !important;
+    }
+    .grid-container .flex-box {
+        flex-direction:  column;
+    }
+    .grid-content img {
+        margin: auto;
+    }
+    .grow-section {
+        flex-direction: column;
+    }
+    .grow-image img {
+        width: 100%;
+        height: 250px !important;
+        object-fit: cover;
+        object-position: 10% 50%;
+    }
+    footer h2{
+        text-align: center;
+    }
+    .link-section {
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+    .links {
+        width: 50% !important;
+    }
+    .links a {
+        font-size: 1.6rem !important;
+    }
+    .links h4 {
+        font-size: 1.6rem;
+    }
+    .footnote {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .terms {
+        width: 90% !important;
+        order: 3;
+    }
+    footer .english {
+        order: 2;
+    }
+    .footnote span {
+        display: block;
+    }
+    .footnote .terms {
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nav-btn {
+        width: 70%;
+    }
+    #none {
+        width: 50%;
+    }
+    .discover h1 {
+        font-size: 2.2rem;
+    }
+    .terms {
+        width: 50% !important;
+    }
+    .footnote .terms svg {
+        width: 30px !important;
+    }
+    .hide-footer {
+        display: none !important;
+    }
+}
+@media screen and (max-width:350px) {
+    .nav-btn {
+        width: 100%;
+    }
+    #none {
+        width: 70%;
+    }
+    .discover h1 {
+        font-size: 1.6rem;
+    }
+    .terms {
+        width: 50% !important;
+    }
+    .delivery-section {
+        max-width: 100% !important;
+    }
+    .delivery-image{
+        width: 100%;
+    }
+    .delivery-image img {
+        object-fit: contain;
+    }
+    .delivery-text-contents, .delivery-text {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .delivery-text h2 {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .grid-container {
+        padding: 0;
+    }
+    .grid-container h2 {
+        font-size: 1.8rem;
+    }
+    .grid-content img {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0;
+    }
+    .footnote .terms svg {
+        width: 30px !important;
+    }
+    .location-container h2 {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    .tbody {
+        display:  flex;
+        flex-direction: row;
+    }
+    .small-screen {
+        display: none !important;
+    }
+    .hide-footer {
+        display: none !important;
+    }
+    .terms {
+        align-items: center;
+        width: 40% !important;
+    }
+}
