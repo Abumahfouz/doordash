@@ -566,7 +566,7 @@ footer .app-items span{
         justify-content: flex-end;
     }
     .hero {
-        height: 100vh;
+        min-height: 60vh;
         background-position: center;
         background-size:cover;
     }
